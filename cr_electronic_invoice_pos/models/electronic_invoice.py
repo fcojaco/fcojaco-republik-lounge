@@ -280,7 +280,7 @@ class PosOrder(models.Model):
         for doc in pos_orders:
             current_order += 1
             _logger.info(
-                'E-INV CR - Consulta Hacienda - POS Order %s / %s', current_order, total_orders)
+                'E-INV CR - Consulta Hacienda - POS Order %s / %s / %s', current_order, total_orders, doc.number_electronic)
             token_m_h = api_facturae.get_token_hacienda(
                 doc, doc.company_id.frm_ws_ambiente)
             if doc.number_electronic and len(doc.number_electronic) == 50:
