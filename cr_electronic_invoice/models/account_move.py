@@ -26,7 +26,7 @@ class AccountInvoiceElectronic(models.Model):
     # ==============================================================================================
     #                                          INVOICE
     # ==============================================================================================
-
+    #
     # === Electronic Number Reference fields === #
     number_electronic = fields.Char(
         string="Electronic number",
